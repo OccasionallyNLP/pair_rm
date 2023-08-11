@@ -1,0 +1,1 @@
+python train_pair.py --output_dir ../output/RM/pair --train_data ../data/RM/pair_dev_margin.jsonl --val_data ../data/RM/pair_dev_margin.jsonl --logging_term 100 --epochs 3 --eval_epoch 1 --batch_size 32 --warmup 10 --ptm_path KETI-AIR/ke-t5-small --max_length 512 --patience 3 --lr 2e-5 --fp16 False --accumulation_steps 10 --margin_type small
